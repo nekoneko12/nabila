@@ -488,6 +488,24 @@
             color: #333;
         }
 
+        /* Image skeleton loading */
+        .skeleton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 100%);
+            background-size: 200% 100%;
+            animation: skeleton 1.5s infinite;
+            border-radius: 10px;
+        }
+
+        @keyframes skeleton {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
         /* Mobile specific styles */
         @media (max-width: 768px) {
             .title {
@@ -541,7 +559,7 @@
     <div class="container">
         <header>
             <h1 class="title">Nabila Gallery</h1>
-            <h2 class="subtitle">Digital Scrapbook Si Kecil</h2>
+            <h2 class="subtitle">Nabila si Kecil</h2>
         </header>
 
         <main class="scrapbook-container">
@@ -555,8 +573,9 @@
                     <!-- Photo 1 -->
                     <div class="photo-slide">
                         <div class="photo-frame">
+                            <div class="skeleton"></div>
                             <div class="loading-indicator"></div>
-                            <div class="photo-container" data-id="1-6Ig_vBks0bK-90FUvb6uydVVfXQbJkB"></div>
+                            <div class="photo-container" data-id="1-6Ig_vBks0bK-90FUvb6uydVVfXQbJkB" data-priority="high"></div>
                             <div class="photo-number">1</div>
                         </div>
                         <div class="photo-caption">
@@ -569,8 +588,9 @@
                     <!-- Photo 2 -->
                     <div class="photo-slide">
                         <div class="photo-frame">
+                            <div class="skeleton"></div>
                             <div class="loading-indicator"></div>
-                            <div class="photo-container" data-id="1suK3ehJcsbFJS7TdiAjH_HIyPhRRg4ZA"></div>
+                            <div class="photo-container" data-id="1suK3ehJcsbFJS7TdiAjH_HIyPhRRg4ZA" data-priority="high"></div>
                             <div class="photo-number">2</div>
                         </div>
                         <div class="photo-caption">
@@ -583,8 +603,9 @@
                     <!-- Photo 3 -->
                     <div class="photo-slide">
                         <div class="photo-frame">
+                            <div class="skeleton"></div>
                             <div class="loading-indicator"></div>
-                            <div class="photo-container" data-id="1APvpoqhcNtXuBOvrbmAmzsRc713CgWo4"></div>
+                            <div class="photo-container" data-id="1APvpoqhcNtXuBOvrbmAmzsRc713CgWo4" data-priority="medium"></div>
                             <div class="photo-number">3</div>
                         </div>
                         <div class="photo-caption">
@@ -597,8 +618,9 @@
                     <!-- Photo 4 -->
                     <div class="photo-slide">
                         <div class="photo-frame">
+                            <div class="skeleton"></div>
                             <div class="loading-indicator"></div>
-                            <div class="photo-container" data-id="1Ik1NlpOVdTXWcn-foUyM8hzTzrzjndA7"></div>
+                            <div class="photo-container" data-id="1Ik1NlpOVdTXWcn-foUyM8hzTzrzjndA7" data-priority="medium"></div>
                             <div class="photo-number">4</div>
                         </div>
                         <div class="photo-caption">
@@ -606,23 +628,4 @@
                             si kecil pusing sama ujian menghafal hadist
                             <span class="decoration decoration-2">💕</span>
                         </div>
-                    </div>
-
-                    <!-- Photo 5 -->
-                    <div class="photo-slide">
-                        <div class="photo-frame">
-                            <div class="loading-indicator"></div>
-                            <div class="photo-container" data-id="1DpuNRmgWDLk-H2xkSbWDuGWr8ZFye2o5"></div>
-                            <div class="photo-number">5</div>
-                        </div>
-                        <div class="photo-caption">
-                            <span class="decoration decoration-1">💕</span>
-                            si kecil lagi rihlah sambil bawa Nara
-                            <span class="decoration decoration-2">💕</span>
-                        </div>
-                    </div>
-
-                    <!-- Photo 6 -->
-                    <div class="photo-slide">
-                        <div class="photo-frame">
-          
+              
